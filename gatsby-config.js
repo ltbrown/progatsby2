@@ -3,8 +3,10 @@ module.exports = {
     title: `Gatsby LU Blog`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+		siteUrl: 'https://elastic-minsky-dc7639.netlify.com',
   },
   plugins: [
+		`gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -25,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Level Up Blog`,
+        short_name: `LB Blog`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -36,7 +38,7 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
 		`gatsby-transformer-remark`,
 		`gatsby-plugin-styled-components`,
 		`gatsby-plugin-netlify-cms`,
